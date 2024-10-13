@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+header{
+    color: white;
+    padding:2% 0;
+    width: 100%;
+    position: absolute;
+}
+
+.valuri{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow:hidden;
+    line-height: 0;
+}
+
+.valuri svg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header h1{
+ margin-bottom: 50px;
+ text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 20px;
+    padding-top: 20%;
+}
+
+#introducere{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(236, 228, 180);
+    color: #854e6f;
+    border-radius: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.image{
+    flex: 1;
+}
+.image img{
+    width: 80%;
+    border-radius: 10px;
+}
+.text{
+    flex:1;
+    padding: 20px;
+}
+
+.text h2{
+    font-size: 26px;
+    color: #854e6f;
+    margin-bottom: 10px;
+}
+
+.text p{
+    font-size:1.3rem;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    color: #5c395e;
+    line-height: 1.5;
+}
+
+.videoclip iframe{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media(max-width:800px){
+    .text p{
+        font-size: 0.4rem;
+        line-height: 1.1;
+    }
+}
+
+#sortimente{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.prajituri {
+    background-color:rgb(248, 205, 155);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: auto;
+}
+
+.prajituri img{
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.prajituri h2{
+    margin: 30px 0 20px;
+    font-size: 30px;
+    color:#7e0261
+}
+
+
+.prajituri p{
+    color:#863d69;
+    font-size: 20px;
+    line-height:1.5;
+}
+
+.table{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;  
+}
+
+#alergeni{
+    margin-top: 40px;
+    background-color: white;
+    padding:20px;
+    border-radius: 20px;
+}
+
+#alergeni h2{
+    text-align: center;
+    font-size: 30px;
+    color: #863d69;
+    margin: 20px 0;
+}
+
+#alergeni table{
+    width:100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#alergeni table, th, td{
+    border: 1px solid #afadad;
+}
+
+#alergeni table th, td{
+    padding: 15px;
+    text-align: center;
+}
+
+#alergeni table th{
+    background-color: #863d69;
+    color: black;
+    font-weight: 800;
+}
+
+#alergeni table td{
+    background-color: #c785ac;
+    color: black;
+    
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.moduri{
+    background-color: rgb(240, 225, 225);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.moduri img{
+    width: 20%;
+    height: 40%; 
+}
+
+.moduri h2{
+    margin: 20px 0 20px;
+    font-size: 20px;
+    color:#7e0261;   
+}
+
+.moduri p{
+    color:#863d69;
+    font-size: 1;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: #3a3a3a;
+    color:white;
+    text-align: center;
+    padding: 15px; 
+    margin-top: 20px;
+}
+
+
+#locatie{
+    margin-top: 20px;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(214, 238, 200);
+    color: #854e6f;
+    border-radius: 20px;
+}
+
+
+.ndtext{
+    flex:1;
+    padding: 20px;
+}
+
+.ndtext h2{
+    font-size: 26px;
+    color: #854e6f;
+
+}
+
+.ndtext p{
+    font-size:1.3rem;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    color: #5c395e;
+    line-height: 1.5;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.image{
+    flex: 1;
+}
+
+.ndimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+

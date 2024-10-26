@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial,serif, sans-serif; 
+	background-color: rgb(27, 1, 1) ;
+}
+
+/* .container {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+    position: relative;
+    z-index: 2;  
+    padding-top: 100px; 
+}  */
+
+.afisaj {
+	padding: 20px;
+	margin: 10px 20px;
+	border-radius: 20px;
+}
+
+@media(max-width:800px){
+    .text p{
+        font-size: 0.4rem;
+        line-height: 1.1;
+    }
+}
+
+.glow {
+    color: #b95a1f;
+    text-shadow: 0 0 10px #e6bf53eb, 0 0 20px #e6bf53eb, 0 0 30px #ca6716, 0 0 40px #ca6716, 0 0 50px #e6bf53eb, 0 0 60px #ca6716;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg,#d43e3eea ,#d27224, #e6bf53eb);
+    background-size: cover;
+    color:#c68b1d;
+    width: 100%; 
+    text-align: center;
+}
+
+nav ul li a:hover{
+	text-decoration: underline;
+}
+/* /HEADER */
+
+/* BANNER */
+#banner {
+    position: relative;
+    height: 400px; 
+    background-image: url(justinbg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 13, 13, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.banner-container {
+    position: relative;
+    z-index: 2;  
+    padding-top: 65px; 
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 10s steps(40, end), blink-caret .75s step-end infinite;
+    border-right: 4px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes typing-loop {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+/* Infinite typing effect */
+.typewriter {
+    animation: typing-loop 10s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+/* /BANNER */
+
+/* VIDEO */
+#video {
+    padding: 30px 0;
+    background: linear-gradient(to bottom, #c4762c, #f0ca60);
+    background-size: cover;
+}
+
+#video h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #d7b73a;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+.text {
+    color: #fff;
+    font-size: 25px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 ratio */
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video{
+	border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}  
+
+#video h2:hover, .text:hover {
+    /* color: #ffcc00; Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge text on hover */
+}
+
+.video:hover {
+    transform: scale(1.05); /* Slightly enlarge the video on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Add a shadow effect on hover */
+}
+/* /VIDEO */
+
+/* LINEUP */
+#lineup {
+    position: relative;
+    height: 700px; 
+    background-image: url(public.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: #050505;
+}
+
+#lineup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(187, 181, 181, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.lineup-container {
+    position: relative;
+    z-index: 2;  
+}
+
+#lineup h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #b12525;
+}
+
+#lineup .artist-card {
+    background-color: #d7d6c3;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#lineup .artist-card:hover {
+    background-color: #cea811;
+    color: #333;
+    transform: scale(1.05);
+}
+
+#lineup .artist-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#lineup .artist-date {
+    font-size: 1.2rem;
+    color: #5b4f09;
+} 
+/* /LINEUP */
+
+/* CAROUSEL */
+#carousel {
+    position: relative;
+    height: auto; 
+    background-image: url(concertbg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-color: #6b0000;
+    color: #050505;
+}
+
+#carousel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(231, 198, 113, 0.44); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.carousel-inner img {
+    height: 700px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures that images cover the area, cropping if necessary */
+    width: 100%;
+    border-radius: 20px;
+}
+/* /CAROUSEL */
+
+footer {
+    background: linear-gradient(90deg, #e6bf53eb, #d27224, #d43e3eea);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 8px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: #ffd700;
+    text-decoration: none;
+}
